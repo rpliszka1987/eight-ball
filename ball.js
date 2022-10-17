@@ -1,15 +1,23 @@
+// Eight ball application
+
+// User name
 var userName = "Robert";
 
+// Conditiona statement that checks if user name is there
 userName ? console.log(`Hello ${userName} !`) : console.log("Hello");
 
+// Question to ask the ball
 var userQuestion = "Will I win the lottery?";
 
+// Logs the name and question to the user.
 console.log(userQuestion + " " + userName);
 
+// Generating random number
 var randomNumber = Math.floor(Math.random() * 8);
 
 var eightBall = "";
 
+// Conditional statement depending on the random number.
 switch (randomNumber) {
   case 0:
     eightBall = "It is certain";
@@ -37,4 +45,5 @@ switch (randomNumber) {
     break;
 }
 
+// Log the 8 ball answer to the console.
 console.log(eightBall);
